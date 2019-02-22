@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "name": "line-bot-sample",
+  "builds": [
+    { "src": "index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "index.js" }
+  ],
+  "alias": "ricton-sample",
+  "env": {
+    "CHANNEL_ACCESS_TOKEN": "@line-token",
+    "CHANNEL_SECRET": "@line-secret"
+  }
+}
